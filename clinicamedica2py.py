@@ -46,6 +46,12 @@ conexao = mysql.connector.connect(
 #cursor.execute(comando)
 #conexao.commit()
 
+#cursor = conexao.cursor()
+#comando = f'SELECT * FROM consultas'
+#cursor.execute(comando)
+#resultado = cursor.fetchall()
+#print(resultado)
+
 #//PACIENTE//////////////////////////////////////////////////////////////////////////
 
 #cursor = conexao.cursor()
@@ -75,6 +81,12 @@ conexao = mysql.connector.connect(
 #cursor.execute(comando)
 #conexao.commit()
 
+#cursor = conexao.cursor()
+#comando = f'SELECT * FROM paciente'
+#cursor.execute(comando)
+#resultado = cursor.fetchall()
+#print(resultado)
+
 
 #//MEDICO////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -101,6 +113,13 @@ conexao = mysql.connector.connect(
 #cursor.execute(comando)
 #conexao.commit()
 
+#cursor = conexao.cursor()
+#comando = f'SELECT * FROM medico'
+#cursor.execute(comando)
+#resultado = cursor.fetchall()
+#print(resultado)
+
+
 #//EXAME////////////////////////////////////////////////////////////////////////////////////
 
 #cursor = conexao.cursor()
@@ -126,6 +145,12 @@ conexao = mysql.connector.connect(
 #comando = f'UPDATE exames SET nome = {nome} WHERE medico = "{medico}"'
 #cursor.execute(comando)
 #conexao.commit()
+
+#cursor = conexao.cursor()
+#comando = f'SELECT * FROM exames'
+#cursor.execute(comando)
+#resultado = cursor.fetchall()
+#print(resultado)
 
 cursor.close()
 conexao.close()
